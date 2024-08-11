@@ -1,5 +1,98 @@
-.board{
-    width: 500px;
-    height: 500px;
+/* Resetting some basic styles */
+body,
+h1,
+p,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* Prevent scrolling */
+}
+
+/* Flex container to center content */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+    /* Adjust width relative to viewport */
+    height: 90vh;
+    /* Adjust height relative to viewport */
+}
+
+/* Title styling */
+.title h1 {
+    font-size: 6vw;
+    /* Responsive font size */
+    color: #333;
+    margin-bottom: 1vh;
+    /* Use viewport units for margins */
+}
+
+/* Board styling */
+.board {
+    width: 80vw;
+    /* Adjust width to fit within the viewport */
+    height: 60vh;
+    /* Adjust height to fit within the viewport */
     display: grid;
+    border: 2px solid #333;
+    margin-bottom: 1vh;
+}
+
+/* Buttons container */
+.buttons {
+    margin-bottom: 1vh;
+}
+
+/* Button styling */
+.buttons button,
+button {
+    padding: 1vh 2vw;
+    /* Use viewport units for padding */
+    margin: 0.5vh;
+    font-size: 2vw;
+    /* Adjust font size relative to viewport */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover,
+button:hover {
+    background-color: #555;
+}
+
+/* Input field styling */
+input[type="text"] {
+    padding: 1vh;
+    font-size: 2vw;
+    margin: 0.5vh;
+    border: 2px solid #333;
+    border-radius: 0.5vh;
+    width: 60vw;
+    text-align: center;
+}
+
+/* Instructions styling */
+.instructions {
+    margin-top: 1vh;
+    font-size: 2.5vw;
+    color: #555;
 }

@@ -21,10 +21,10 @@ function populateBoard(size) {
     let squares = document.querySelectorAll('.board div');
     squares.forEach(square => square.remove());
 
-    board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    board.style.gridTemplateColumns = `repeat(${size * 2}, 1fr)`;
     board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
-    let amount = size * size;
+    let amount = size * size * 2;
     for (let i = 0; i < amount; i++) {
         let square = document.createElement('div');
         square.addEventListener('mouseover', colorSquare);
