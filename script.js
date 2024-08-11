@@ -1,5 +1,7 @@
+
 let color = "black";
 let shift = false;
+
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Shift') {
         shift = true;
@@ -46,7 +48,7 @@ function colorSquare() {
 }
 
 function changeColor(newColor) {
-    
+    // TODO: Add validation
     color = newColor;
 }
 
