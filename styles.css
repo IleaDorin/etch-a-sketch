@@ -1,9 +1,5 @@
 /* Resetting some basic styles */
-body,
-h1,
-p,
-input,
-button {
+body, h1, p, input, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,14 +7,15 @@ button {
 
 /* Body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFFFF0;
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    background-color: #FAF0E6; /* Off-white color */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
-    /* Prevent scrolling */
+    overflow: hidden; /* Prevent scrolling */
+    color: #333; /* Dark text for contrast */
+    padding: 2vh 0; /* Added padding to prevent content from being cut off */
 }
 
 /* Flex container to center content */
@@ -27,45 +24,37 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90vw;
-    /* Adjust width relative to viewport */
-    height: 90vh;
-    /* Adjust height relative to viewport */
+    width: 90vw; /* Adjust width relative to viewport */
+    max-height: 96vh; /* Prevent overflow beyond the viewport */
 }
 
 /* Title styling */
 .title h1 {
-    font-size: 6vw;
-    /* Responsive font size */
+    font-size: 5vw; /* Slightly reduced font size */
     color: #333;
     margin-bottom: 1vh;
-    /* Use viewport units for margins */
 }
 
 /* Board styling */
 .board {
-    width: 80vw;
-    /* Adjust width to fit within the viewport */
-    height: 60vh;
-    /* Adjust height to fit within the viewport */
+    width: 80vw; /* Adjust width to fit within the viewport */
+    height: 50vh; /* Reduced height to ensure space for other elements */
     display: grid;
     border: 2px solid #333;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
+    background-color: #fff; /* White background for drawing board */
 }
 
 /* Buttons container */
 .buttons {
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 
 /* Button styling */
-.buttons button,
-button {
-    padding: 1vh 2vw;
-    /* Use viewport units for padding */
+.buttons button, button {
+    padding: 0.8vh 1.5vw; /* Reduced padding */
     margin: 0.5vh;
-    font-size: 2vw;
-    /* Adjust font size relative to viewport */
+    font-size: 2vw; /* Adjust font size relative to viewport */
     background-color: #333;
     color: #fff;
     border: none;
@@ -74,14 +63,13 @@ button {
     transition: background-color 0.3s ease;
 }
 
-.buttons button:hover,
-button:hover {
+.buttons button:hover, button:hover {
     background-color: #555;
 }
 
 /* Input field styling */
 input[type="text"] {
-    padding: 1vh;
+    padding: 0.8vh;
     font-size: 2vw;
     margin: 0.5vh;
     border: 2px solid #333;
@@ -94,5 +82,5 @@ input[type="text"] {
 .instructions {
     margin-top: 1vh;
     font-size: 2.5vw;
-    color: #555;
+    color: #333; /* Darker text for better contrast */
 }
